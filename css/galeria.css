@@ -1,0 +1,131 @@
+@charset "utf-8";
+.body{
+	background-image:url(../images/background_2.gif)!important;
+	background-repeat:repeat;
+	background-size:auto;
+}
+.mgaleria {
+	margin: 0 auto;
+	border-color: green;
+	border-width: 2px;
+	border-style: solid;
+	margin-top: 1%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#B0B0B0), to(#8F8F8F)); /*para chrome y safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+	
+}
+.styled-select select {
+  
+   border: center;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+.green   { background-color: #779126; }
+
+.style-album-general {
+	margin-left: 10%;
+	padding:10px;
+	overflow: hiden;
+	
+}
+
+.style-album-content {
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding:15px;
+	overflow: hidden;
+	border-radius: 20px;
+	border-style: solid;
+	display: inline-block;
+}
+
+.style-checkbox{
+	display: inline-block;
+	color: white;
+	padding: 1%;
+	text-align:center;
+	position: center;
+	margin-top:auto;
+	margin-bottom: auto;
+	margin-right: 1%;
+}
+
+/*servicios*/
+.contenidoGaleria {
+	padding: 2%;
+	background-image:url(../images/background_2.gif);
+	margin-top: 230px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bot: 2%;
+	border: 3px #000000 solid;
+	
+}
+
+/*CSS MENUS*/
+ul.topnav2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: hsla(0,0%,0%,0.83);
+  font-family: Montserrat, sans-serif;
+  
+}
+
+ul.topnav2 li {
+   float: left; 
+   margin-left:1.6%;
+  
+}
+
+ul.topnav2 li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+  padding-top:20px;
+ 
+}
+ul.topnav2 li a:hover {background-color: #555;}
+
+ul.topnav2 li.icon {display: none;}
+ul.topnav2 li i{margin-right:3px;}
+
+
+@media screen and (max-width:920px) {
+  ul.topnav2 li:not(:first-child) {display: none;}
+  ul.topnav2 li.icon {
+    float: right;
+    display: inline-block;
+	
+  }
+}
+
+@media screen and (max-width:920px) {
+  ul.topnav2.responsive {position: relative;  }
+  ul.topnav2.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+  }
+  ul.topnav2.responsive li {
+    float: none;
+    display: inline;
+	
+  }
+  ul.topnav2.responsive li a {
+    display: block;
+    text-align: left;
+	
+  }
+}
+

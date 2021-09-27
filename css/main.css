@@ -1,0 +1,362 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*General*/
+.body{
+    margin:0;
+	padding:0;
+	height:100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-image:url(../images/backgroundlight.JPG);
+	background-position: center;
+	background-size:cover;
+	
+	}
+#barraaceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+    background-color: black;
+    color:#fff;
+    z-index:99999;
+}
+.inner {
+    width:100%;
+    position:absolute;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:12px;
+    top:30%;
+}
+ 
+.inner a.ok {
+    padding:4px;
+    color:#00ff2e;
+    text-decoration:none;
+}
+ 
+.inner a.info {
+    padding-left:5px;
+    text-decoration:none;
+    color:#faff00;
+}
+/*Header*/
+.header{
+   position:fixed;
+   top:0px;
+   width:100%;
+   z-index:4;
+}
+.headerContainer{
+   display:flex;
+   background:hsla(0,0%,0%,0.73);
+
+   
+}
+.containerLogo{
+   display:inline-block; 
+   
+}
+.menuContainer{
+   display:inline-block;
+   width:100%;
+   
+   
+  
+}
+.logo{
+    margin:0;
+	display:inline-block;
+	float:left;
+	height:100px;
+	
+}
+.lineaBlanca{
+    height:5px;
+	width:100%;
+	background:white;
+    
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: Montserrat, sans-serif;
+  margin-top:20px;
+  
+ 
+  
+}
+
+ul.topnav li {
+   float: left; 
+   margin-left:1.6%;
+  
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+  padding-top:20px;
+ 
+}
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+ul.topnav li i{margin-right:3px;}
+
+
+/*Contenido*/
+
+.contenido{
+width:100%;
+margin-top:100px;
+height:100%;
+
+}
+
+.superior{
+     width:10%;
+	 height:75px;
+	 display:inline-block;
+	 float:left;	 
+}
+.containerSeccion{
+  
+  padding:15px;
+  margin-top:100px;
+  text-align:justify;
+ 
+}  
+.eventos{
+display:inline-block;
+width:310px;
+border:solid;
+border-color:black;
+float:left;
+background-color:hsla(0,0%,0%,0.73);
+margin-top:20px;
+}
+#proximoEvento{
+	width:100%;
+}
+#imagenEvento{
+	width:100%;
+	
+}
+.centro{
+	  display:inline-block;
+	float:left;
+	 
+	  width:40%;
+	  height:400px;
+	  margin-top:20px;
+}
+#imagenWelcome{width:100%;}
+.servicios{
+width:12%;
+height:auto;
+display:inline-block;
+float:right;
+margin-right:0;
+font-family: Montserrat, sans-serif;
+text-align:center;
+color:white;
+margin-top:20px;
+}
+.servicio{
+ background-color:hsla(0,0%,0%,0.73);
+ border:solid;
+ border-color:black;
+ padding:5%;
+ height:100%;
+ border-radius: 8px;
+ 
+}
+#imagenServicio{
+    width:100%;
+	border:solid;
+	border-color:white;
+	border-radius: 50%;
+}
+.sugerenciasMusicales{
+    
+   	 background:hsla(0,0%,0%,0.73);
+	
+	display:inline-block;
+	margin-top:60px;
+} 
+.footer{
+	font-family: 'Comfortaa', cursive;
+	position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+	background:black;
+	text-align:center;
+	padding-top:20px;
+	
+	
+	
+}
+
+    
+/*Versión adaptable*/    
+@media screen and (max-width:1024px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+	
+  }
+}
+
+@media screen and (max-width:1024px) {
+  /*Header*/
+  ul.topnav.responsive {position: relative;  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+	
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+	
+  }
+   .headerContainer{
+    background:black!important;
+	
+  }
+  .containerLogo{
+   width:120px;
+ 
+  }
+  .logo{
+	width:120px;
+
+	
+  }
+  .contenido{
+		height:700px;
+  }
+	.servicios{
+		width:20%;
+
+		
+		
+	}
+  .izquierda{
+		display:inline-block;
+	    float:left;
+	    
+	    height:465px;
+  }
+  .eventos{
+
+     width:310px;
+     border:solid;
+     border-color:black;
+     height:auto;
+     float:left;
+     background-color:hsla(0,0%,0%,0.73);
+    
+  }
+  #proximoEvento{
+	width:100%;
+  }
+  #imagenEvento{
+	width:100%;
+	
+  }
+  /*contenido*/
+	
+  
+  #barraaceptacion   {
+		  height:50px;
+		  
+	  }
+  .inner{
+		  top:10%;
+	  }
+  .centro{
+       margin-top:20px;
+	  height:465px;
+	  
+    }
+	#imagenWelcome{
+		width:100%;
+	}
+  .sugerenciasMusicales{
+		 background:hsla(0,0%,0%,0.73);
+	     display:inline-block;
+		
+  }
+	.footer{
+		
+		bottom:0!important;
+		position:relative!important;
+		height:auto!important;
+	}
+ 
+	
+ }
+ @media screen and (max-width:837px) {
+	 .centro{display:none;}
+	 .servicios{width:20%;}
+  }
+  /*ocultamos secciones en version movil*/
+  @media screen and (max-width:480px) {
+    .centro{
+         display:none;
+    }
+    .servicios{
+         display:none;
+    }
+	.sugerenciasMusicales{
+		 background:hsla(0,0%,0%,0.73);
+		 
+	}
+	  #barraaceptacion   {
+		  height:70px;
+		  
+	}
+	  .inner{
+		  top:10%;
+	}
+	  .footer{
+		  font-size: 10px;
+		 
+	  }
+  }
+
+
+
+
+
+    
+  
+
+

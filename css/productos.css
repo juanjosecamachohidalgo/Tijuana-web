@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url("main.css");
+
+
+/*--CONTACTO--*/
+.body{
+	
+	background-image:url(img/fondoBlanco.gif)!important;
+	background-repeat:repeat;
+	background-size:auto;
+}
+.contenedorContacto{
+	
+	width: 100%;
+	height:auto;
+	padding-left:10%;
+	padding-right:10%;
+	padding-bottom:4%;
+	margin-top:10%;
+	
+
+}
+.contenedorProductos{
+margin-top:50px;
+}
+#footer{
+	margin:0 auto!important;
+	position:static!important;
+	font-family: 'Comfortaa', cursive;
+	
+}
+
+
+.contenidoContacto{
+max-height:100%;
+margin-left:5%;
+margin-right:5%;
+margin-top:2%;
+
+}
+
+.contacto{	
+display: table-cell;
+padding-right: 5%;
+font-weight: bold;
+font-size: x-large;
+
+}
+
+.contactoInf{	
+	font-size: medium;
+	font-weight:normal;
+	padding-left:10%;
+
+}
+
+.localizacion{
+	display: table-cell;
+	padding-left: 5%;
+	font-weight: bold;
+	font-size: x-large;
+
+	
+}
+
+.localizacionInf{
+	display: table-cell;
+	padding-left: 10%;
+	font-weight: bold;
+	font-size: medium;
+}
+
+
+.textoSugerencia{
+	resize:none;
+	background-color:#F2F2F2;
+}
+
+#divpadre img{
+    max-width: 100%;
+}
+#imgmap{
+	margin-top:5%;
+}
+
+.letraFuerte{
+	font-family: 'Kaushan Script', cursive;
+	
+}
+.letraMediana{
+	font-family: 'Comfortaa', cursive;
+}
+
+.mapa {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.mapa iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+       height: 100% !important;
+}
+
+@media screen and (max-width:920px) {
+  .contenedorProductos{
+  margin-top:100px!important;
+  }
+}
+
+
+
+/*-------------*/
+
+
+
+
+
+
+
